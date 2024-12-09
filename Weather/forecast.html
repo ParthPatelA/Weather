@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather</title>
+    <link rel="icon" href="images/weather-news.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+        <!-- The naviguation on the right side of header with 2 links -->
+       <nav>
+        <a href="index.html">Home</a>
+        <a href="save.html">Saved Cities</a>
+        <a href="forecast.html">Forecast</a>
+       </nav>
+    </header>
+    <main>
+        <!-- Forecast Section -->
+        <section id="forecastSection">
+            <h2>Forecast</h2>
+            <div id="searchForecast">
+                <label for="forecastInput">Search Cities:</label>
+                <input type="text" id="forecastInput" placeholder="Enter city name"> <!--The search bar-->
+                <button id="forecastButton">Search</button> <!--The search button-->
+            </div>
+
+            <!-- City Display -->
+            <div id="cityDisplay">
+                <h3>City</h3>
+                <div id="cityImagePlaceholder"></div>
+            </div>
+
+            <!-- Daily Forecast Cards -->
+            <div id="forecastCards">
+                <!-- Placeholder for 7 day forecast -->
+                 <!-- Each #dayCard represents a day where it will show the weather of the day -->
+                  <!-- Day 1 -->
+                <div class="dayCard">
+                    <div class="weatherIcon"></div>  <!-- Icon will change depending of the weather that day -->
+                    <div class="dayDetails">Day 1</div> <!-- Days should change according to current day date-->
+                </div>
+                <!-- Day 2 -->
+                <div class="dayCard">
+                    <div class="weatherIcon"></div> <!-- Icon will change depending of the weather that day -->
+                    <div class="dayDetails">Day 2</div> <!-- Days should change according to current day date-->
+                </div>
+                <!-- Day 3 -->
+                <div class="dayCard">
+                    <div class="weatherIcon"></div> <!-- Icon will change depending of the weather that day -->
+                    <div class="dayDetails">Day 3</div> <!-- Days should change according to current day date-->
+                </div>
+                <!-- Day 4 -->
+                <div class="dayCard">
+                    <div class="weatherIcon"></div> <!-- Icon will change depending of the weather that day -->
+                    <div class="dayDetails">Day 4</div> <!-- Days should change according to current day date-->
+                </div>
+                <!-- Day 5 -->
+                <div class="dayCard">
+                    <div class="weatherIcon"></div> <!-- Icon will change depending of the weather that day -->
+                    <div class="dayDetails">Day 5</div> <!-- Days should change according to current day date-->
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--  Footer -->
+    <footer>
+        <nav> <!--Links-->
+        <a href="index.html">Home</a>
+        <a href="save.html">Saved City</a>
+        <a href="forecast.html">Forecast</a>
+       </nav>
+        <p>&copy; 2023 Weather App</p>
+    </footer>
+    <script src='script.js'></script>
+
+</body>
+</html>
+

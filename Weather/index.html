@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <link rel="icon" href="images/weather-news.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Weather App</h1>
+        <!-- The naviguation on the right side of header with 2 links -->
+       <nav>
+        <a href="index.html">Home</a>
+        <a href="save.html">Saved Cities</a>
+        <a href="forecast.html">Forecast</a>
+       </nav>
+    </header>
+
+    <main>
+        <!-- Search bar to search the city. -->
+        <div id="searchCity">
+            <input type="text" id="inputCity" placeholder="Enter city name">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <!-- This is where the Iframe will be located/ -->
+        <section id="mapSection">
+            <h2>Select a Location on the Map</h2>
+            <div id="map" style="width: 100%"></div>
+        </section>
+
+        <!-- This section will hold weather info -->
+        <section id="weatherDisplay">
+            <h2>Weather Information</h2>
+            <!-- Made a division for the actual info -->
+             <!-- Info about: Temperature, conditions, humidity, windspeed -->
+            <div id="weatherInfo">
+                <p id="temperature">Temperature: --°C</p> 
+                <p id="conditions">Conditions: --</p>
+                <p id="humidity">Humidity: --%</p>
+                <p id="windSpeed">Wind Speed: -- km/h</p>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <nav> <!--Links-->
+        <a href="index.html">Home</a>
+        <a href="save.html">Saved City</a>
+        <a href="forecast.html">Forecast</a>
+       </nav>
+        <p>&copy; 2023 Weather App</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src='script.js'></script>
+</body>
+</html>

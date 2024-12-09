@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather</title>
+    <link rel="icon" href="images/weather-news.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+        <!-- The naviguation on the right side of header with 2 links -->
+       <nav>
+        <a href="index.html">Home</a>
+        <a href="save.html">Saved Cities</a>
+        <a href="forecast.html">Forecast</a>
+       </nav>
+    </header>
+<main>
+        <!-- Saved Cities Title -->
+        <section id="savedCitiesSection">
+            <h2>Saved Cities</h2>
+            <!-- Search bar for adding new cities -->
+            <div id="addCity">
+                <input type="text" id="inputSavedCity" placeholder="Enter city name to add"> <!--The search bar-->
+                <button id="addButton">Add</button> <!--The search button-->
+            </div>
+             
+            <!-- List of saved cities -->
+            <div id="cityList">
+                <h3>List of Saved Cities</h3>
+                <ul id="savedCities">
+                    <!-- Dynamically populated saved cities -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <nav> <!--Links-->
+            <a href="index.html">Home</a>
+            <a href="save.html">Saved City</a>
+            <a href="forecast.html">Forecast</a>
+        </nav>
+        <p>&copy; 2023 Weather App</p>
+    </footer>
+    
+    <script src='script.js'></script>
+
+</body>
+</html>
